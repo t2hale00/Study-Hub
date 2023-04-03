@@ -1,46 +1,20 @@
 body {
     margin: 0px;
     font-family:'Inter';
-    font-size: 20rem;
+    font-size: 16px;
     line-height: 1.5;
     text-align: center;
-
 }
-    .button {
-      background-color:  #052df5; /* blue */
-      color: white;
-      padding: 10px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-    }
+
+.h2 {
+  text-align: center;
+}
+
+.h3 {
+  text-align: center;
+}
+
     
-  .button2 {
-      background-color: #36d570;
-      padding: 10px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-    }
-
-    .h2 {
-        text-align: center;
-        padding-top: 300px;
-        padding-bottom: 100px;
-    }
-
-    .h3 {
-        text-align: center;
-        padding-top: 100px;
-        padding-bottom: 200px;
-    }
-
   
     /* Style all font awesome icons */
     .fa {
@@ -84,11 +58,3 @@ body {
     }
 
     
-    .container {
-      text-align: center;
-      width: 30%;
-    }
-    
-    .container img {
-      margin: 0 auto;
-    }
