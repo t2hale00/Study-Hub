@@ -14,47 +14,50 @@ body {
   text-align: center;
 }
 
+.button {
+    height: 50px;
+    width: 100px;
+}
+.button2 {
+    height: 50px;
+    width: 100px;
+}
+.nav-item:hover {
     
-  
-    /* Style all font awesome icons */
-    .fa {
-        padding: 20px;
-        font-size: 3rem;
-        width: 3rem;
-        text-align: center;
-        text-decoration: none;
-        margin-top: 10px;
-    }
-    
-    /* Add a hover effect if you want */
-    .fa:hover {
-        opacity: 0.7;
-    }
-    
-    /* Set a specific color for each brand */
-    
-    /* Facebook */
-    .fa-facebook {
-        background: #052df5;
-        color: white;
-    }
-    
-    /* Twitter */
-    .fa-twitter {
-        background: #052df5;
-        color: white;
-        
-    }
+    background-color: white;
+}
 
-        
-    .fa-instagram {
-        background: #052df5;
-        color: white;
-    }
-            
-    .fa-linkedin {
-        background: #052df5;
-        color: white;
-    }
-
+.gradient-custom-3 {
+    /* fallback for old browsers */
+    background: #fcfcfc;
     
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(242, 242, 241, 0.913), rgba(228, 237, 242, 0.5));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(253, 253, 253, 0.913), rgba(180, 220, 240, 0.5))
+    }
+    .gradient-custom-4 {
+    /* fallback for old browsers */
+    background:  #ee7724;}
+
+   .gradient-custom-2 {
+        /* fallback for old browsers */
+        background: #fccb90;
+        
+        
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to right, #ee7724,rgba(254, 153, 3, 0.9), #ee7724, rgba(254, 153, 3, 0.9) );
+        }
+        
+        @media (min-width: 768px) {
+        .gradient-form {
+        height: 100vh !important;
+        }
+        }
+        @media (min-width: 769px) {
+        .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+        }
+        }
