@@ -1,0 +1,39 @@
+
+
+.askquery {
+    width: 800px;
+    height: auto;
+    background-color: bisque;
+    font-size: 20px;
+    color: black;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: left;
+    border-radius: 20px;
+}
+
+
+
+.askquerytextarea {
+    resize: none;
+    color: grey;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: bisque;
+   
+    
+
+}
+
+.askquerysubmit {
+    background-color: white;
+    color: red;
+    padding: 15px ;
+    border: none;
+    border-radius: 15px;
+    display: inline-block;
+    text-align: right;
+    
+
+}
