@@ -27,7 +27,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="askaquerynotloggedin.html">Ask a Query</a>
+                        <a class="nav-link" href="askaquery.html">Ask a Query</a>
                     </li>
                     
                     <li class="nav-item">
@@ -35,19 +35,17 @@
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link  active" href="feedbacks.html">Feedbacks</a>
+                        <a class="nav-link  active" href="makereviewloggedin.html">Feedbacks</a>
                     </li>
                     
                     <li class="nav-item">
                         <a class="nav-link" href="aboutus.html">About Us</a>
                     </li>
                 </ul>
-                
-                <a class="nav-link" href="login.html"><button type="button" class="btn btn-primary" style="background-color: rgb(18, 109, 195); width: 100px; height: 50px;">
-                    <b>Log In</b></button></a> 
 
-                <a class="nav-link" href="signup.html"><button type="button" class="btn btn-primary" style="background-color: rgb(51, 157, 44); width: 100px; height: 50px;">
-                    <b>Sign Up</b></button></a>
+                
+                <a class="nav-link" href="logout.html"><button type="button" class="btn btn-primary" style="background-color: rgb(18, 109, 195); width: 90px; height: 50px;">
+                    <b>Log Out</b></button></a> 
                 
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -67,13 +65,13 @@
     <div class="container-fluid">
         <!-- <h4>Web App Reviews</h4> -->
 
-        
-        <div class="d-flex align-items-center justify-content-center pb-4">
-            <p class="mb-0 me-2">Help us develop STUDY HUB by making a review.</p>
-            <br><br>
-            <a class="nav-link" href="makeafeedbacknotloggedin.html"><button type="button" class="btn btn-outline-success">
-             Create review here</button></a>
-          </div>
+        <div class="feedback">
+            <form action="http">
+                <textarea name="" id="" cols="90" rows="9"
+                    class="feedbacktextarea">Write your review here.... </textarea>
+                <input type="submit" value="Submit" class="feedbacksubmit">
+            </form>
+        </div>
 
         <div class="feedback">
             <div class="feedback-content"> “ I absolutely love this web app! It's so user-friendly and intuitive. The

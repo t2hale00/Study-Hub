@@ -13,13 +13,13 @@ body {
   }
 
 .bg-2 {
-  background-color: #e9eaeddc; /* Dark Blue */
+  background-color: #e9eaeddc; 
   color: #7c5301;
   padding: 50px;
 }
 
 .bg-3 {
-  background-color: #fef1ca; /* White */
+  background-color: #fef1ca; 
   color: #555555;
   padding: 50px;
 }
