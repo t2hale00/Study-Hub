@@ -1,9 +1,27 @@
 body {
     margin: 0px;
-    font-family:'Inter';
     font-size: 16px;
-    line-height: 1.5;
     text-align: center;
+    font: 20px "Montserrat", sans-serif;
+    line-height: 1.8;
+}
+.bg-1 {
+    background-color: rgba(254, 153, 3, 0.9);
+    color: #5e3f02;
+    padding: 50px;
+    align-items: center;
+  }
+
+.bg-2 {
+  background-color: #e9eaeddc; 
+  color: #7c5301;
+  padding: 50px;
+}
+
+.bg-3 {
+  background-color: #fef1ca; 
+  color: #555555;
+  padding: 50px;
 }
 
 .h2 {
@@ -14,14 +32,6 @@ body {
   text-align: center;
 }
 
-.button {
-    height: 50px;
-    width: 100px;
-}
-.button2 {
-    height: 50px;
-    width: 100px;
-}
 .nav-item:hover {
     
     background-color: white;
@@ -31,11 +41,9 @@ body {
     /* fallback for old browsers */
     background: #fcfcfc;
     
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgba(242, 242, 241, 0.913), rgba(228, 237, 242, 0.5));
     
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgba(253, 253, 253, 0.913), rgba(180, 220, 240, 0.5))
+    background: linear-gradient(to right, rgba(253, 253, 253, 0.913), #fef1ca)
     }
     .gradient-custom-4 {
     /* fallback for old browsers */
