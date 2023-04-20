@@ -45,6 +45,8 @@
     border-radius: 15px;
     display: inline-block;
     text-align: right;
-    
+}
 
+.form {
+    margin-bottom: 50px;
 }
