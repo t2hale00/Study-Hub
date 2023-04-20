@@ -1,7 +1,6 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "npx tsc",
@@ -22,5 +21,7 @@
     "express": "^4.18.2",
     "nodemon": "^2.0.22",
     "pg": "^8.10.0"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
