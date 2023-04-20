@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,900');
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+.aligncenter {
+	display: block;
+}
+a:focus {
+	outline: 0 solid
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+html,
+body {
+	margin:10px;
+	}
+body {
+	font-family: 'Poppins', serif;
+	background-color: #fff;
+	font-weight: 400;
+	font-style: normal;
+	font-size:17px;
+	line-height: 1.4em;
+	color: #333;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-weight: 500;
+	padding:0;
+	font-family: 'Poppins', serif;
+	line-height: 1.3em;
+}
+p {
+	font-size: 14px;
+	margin-bottom: 0px;
+	line-height: 1.4em;
+	color:#000;
+	letter-spacing:1px
+}
+content{
+	color:#71706E;
+	font-size: 14px;
+}
+span{
+	font-size:13px!important;
+}
+a,
+a:hover,
+a:focus,
+input,
+textarea {
+    text-decoration: none;
+    outline: none;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+/* 2. Header Area CSS */
+
+.header {
+  background-color:#FFA41F;
+  border:3px solid #000;
+  padding:20px 0 15px 0;
+  vertical-align: middle;
+}
+.fa-size{
+	color: #000;
+	font-size:38px;
+}
+.right-query{
+	color: #000;
+	font-size:27px;
+	margin-left:-40px;
+	vertical-align: middle;
+}
+/* 4. About Area CSS */
+.grayform{
+	margin-bottom:35px;
+	margin-top:35px;
+}
+.info2{
+	display: flex;
+	justify-content:flex-start;
+}
+.info2 input[type=text] {
+	padding:12px;
+	background-color:#F9F0DF;
+	placeholder-color:#928B81;
+	color: #000;
+	border: none;
+	border-radius: 15px;
+	width:100%!important;
+	font-size: 16px;
+}
+.about-img5 input[type=text] {
+	padding:5px;
+	background-color:#ffffff;
+	placeholder-color:#928B81;
+	color: #000;
+	border:1px solid #000;
+	border-radius:15px;
+	width:100%!important;
+	font-size: 14px;
+}
+.about-img{
+	display: flex;
+	justify-content:flex-end;
+}
+.about-img3{
+	display: flex;
+	margin-top: 10px;
+}
+.info3{
+	background-color:#F9F0DF;
+	padding: 20px;
+	border-radius: 15px;
+}
+.about-img img {
+  max-width:80px;
+  border-radius: 100px;
+}
+.about-img3 img {
+  max-width:80px;
+  border-radius: 100px;
+}
+.about-img4 img {
+  max-width:50px;
+  border-radius: 100px;
+  margin-right: 20px;
+}
+.about-img2 img {
+  max-width:80px;
+  border-radius: 100px;
+}
+.graybox{
+	background-color: #fff;
+	padding:25px 25px 20px 25px;
+	margin-bottom:35px;
+	margin-top:35px;
+	border-radius: 15px;
+}
+.graybox2{
+	background-color: #F6F6F6;
+	padding:25px 25px 20px 25px;
+	margin-bottom:40px;
+	margin-top:40px;
+	border-radius: 15px;
+}
+.graybox2 h6{
+	margin-bottom:5px;
+	font-weight:600;
+	font-size: 16px;
+}
+.graybox2 h4{
+	margin-bottom:5px;
+	font-weight:600;
+	font-size:25px;
+	color:#FFA41F;
+}
+/* 19. Footer Area CSS */
+.footer-area {
+  background-color:#FFA41F;
+  padding:20px 0 15px 0;
+  color: #fff;
+  border: 3px solid #000;
+}
+.footer-area a {
+  color: #fff;
+}
+.footer-area p {
+  font-size: 18px;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

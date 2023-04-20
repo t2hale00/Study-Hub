@@ -1,0 +1,98 @@
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+	html,
+body {
+	margin:3px;
+	}
+	header .row{
+		flex-wrap: nowrap;
+	}
+	footer .row{
+		flex-wrap: nowrap;
+	}
+	.fa-size{
+	font-size:30px;
+}
+.logo{
+	max-width:72px;
+}
+span{
+	font-size:11px!important;
+}
+.graybox{
+	padding:20px 15px 15px 15px;
+	margin-bottom:25px;
+	margin-top:25px;
+}
+.graybox2{
+	padding:20px 15px 15px 15px;
+	margin-bottom:25px;
+	margin-top:25px;
+}
+.graybox2 h4{
+	font-size:19px;
+	line-height:1.2em;
+}
+.graybox2 h6{
+	font-size:15px;
+	line-height:1.2em;
+}
+.graybox2 h5{
+	font-size:18px;
+	line-height:1.2em;
+}
+.about-img {
+    justify-content:flex-start;
+}
+.about-img2{
+    text-align: left!important;
+}
+.about-img img {
+  max-width:60px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+.about-img3 img {
+  max-width:60px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+.about-img2 img {
+  max-width:60px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+.about-img4 img {
+  max-width:50px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+.info{
+	margin-left:;
+}
+.info2{
+	margin-left:;
+}
+	.about-text {
+		margin-top: 30px;
+	}
+	.about-text a {
+		margin-bottom: 30px;
+	}
+.info2 input[type=text] {
+	padding:10px;
+	font-size: 15px;
+}
+.right-query{
+	font-size: 21px;
+	margin-left:-30px;
+}
+.reply{
+	margin: 0px 15px;
+}
+.grayreply{
+	display: inline-flex;
+}
+
+}
