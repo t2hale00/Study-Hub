@@ -25,3 +25,10 @@ create table comment (
     no_likes int 
     
 );
+
+
+create table feedbacks (
+    feedback_id serial primary key,
+    user_id int REFERENCES users(user_id) on delete RESTRICT,
+    msg varchar(255) not null
+    );
