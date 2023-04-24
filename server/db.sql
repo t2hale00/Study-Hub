@@ -19,13 +19,13 @@ create table question (
     created_at timestamp with time zone
 );
 
-create table comment (
+create table comments (
     comment_id serial primary key,
     question_id int references question(question_id) on delete RESTRICT,
+    comment varchar(255) not null,
     no_likes int 
     
 );
-
 
 create table feedbacks (
     feedback_id serial primary key,
