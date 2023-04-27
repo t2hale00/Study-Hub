@@ -32,3 +32,7 @@ create table feedbacks (
     user_id int REFERENCES users(user_id) on delete RESTRICT,
     msg varchar(255) not null
     );
+
+
+INSERT INTO users (name, email, password)
+VALUES ('Lea Hampinen', 'lea.hampinen@gmail.com', 'OAMK12345!!!!!');
