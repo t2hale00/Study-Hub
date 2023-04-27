@@ -15,11 +15,60 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const cors_1 = __importDefault(require("cors"));
 const pg_1 = require("pg");
+//this is to parse request body for POST requests
 const app = (0, express_1.default)();
+const { createToken } = require('./auth');
+const path = require("path");
+const knex = require('knex');
+const bodyParser = require("body-parser");
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 app.use((0, cors_1.default)());
 app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: false }));
 const port = 3001;
+/*let initialPath = path.join(__dirname, "public");
+
+app.use(express.static(initialPath));
+
+app.get('/', (req, res)=> {
+    res.sendFile(path.join(initialPath, "index.html"));
+})
+
+app.get("/login", (req,res) => {
+    res.sendFile (path.join(initialPath, "login.html"));
+});
+
+app.get("/register", (req,res) => {
+    res.sendFile (path.join(initialPath, "signup.html"));
+});
+
+
+
+app.listen (3000,() => {
+    console.log ("Example app listening on port 3000!");
+});
+*/
+app.post("/login", (req, res) => {
+    // Read username and password from request body
+    const { username, password } = req.body;
+    // Console log that somebody is trying to log in
+    console.log(`Trying to log in with username: ${username} and password: ${password}`);
+    // Check if username and password are valid
+    if (username === "john@gmail.com" && password === "password") {
+        // Create a JWT token
+        const token = createToken(username);
+        // Login successful
+        return res.json({ message: "Login successful!", token: token });
+    }
+    // Login failed
+    return res.status(401).send("Login failed!");
+});
+app.get("/profile", (req, res) => {
+    res.send("Hello profile!");
+});
 app.delete("/delete/:id", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const pool = openDb();
     const id = parseInt(req.params.id);
@@ -66,4 +115,13 @@ const openDb = () => {
     });
     return pool;
 };
+const db = knex({
+    client: 'pg',
+    connection: {
+        host: 'localhost',
+        user: 'postgres',
+        password: '1805',
+        database: 'studyhub'
+    }
+});
 app.listen(port);

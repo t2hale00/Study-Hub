@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>STUDYHUB</title>
-    <link rel="stylesheet" href="css\faqs.css">
- 
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css/feedback.css">
     
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgba(254, 153, 3, 0.9);">
         <div class="container-fluid">
@@ -31,7 +31,7 @@
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link  active" href="faqs.html">FAQs</a>
+                        <a class="nav-link active" href="faqs.html">FAQs</a>
                     </li>
                     
                     <li class="nav-item">
@@ -43,13 +43,11 @@
                     </li>
                 </ul>
                 
-                
                 <a class="nav-link" href="login.html"><button type="button" class="btn btn-primary" style="background-color: rgb(18, 109, 195); width: 100px; height: 50px;">
                     <b>Log In</b></button></a> 
 
                 <a class="nav-link" href="signup.html"><button type="button" class="btn btn-primary" style="background-color: rgb(51, 157, 44); width: 100px; height: 50px;">
                     <b>Sign Up</b></button></a>
-                
                 
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -61,36 +59,65 @@
 
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <br>
     <br>
-    <h2>Frequesntly Asked Questions about Study Hub</h2>
-    <br>
-    <p>
-        Q. What programming languages do you support? <br>
-        A: We support a wide range of programming languages including Python, Java, C++, JavaScript, Ruby, and more. If you have a specific language requirement, please contact us and we'll be happy to discuss your needs.<br><br>
-        
-        Q: What kind of programming problems can your solutions help me solve? <br>
-        A: Our solutions can help you solve a variety of programming problems, including algorithmic challenges, data structure design, database management, and more. We can also provide customized solutions to meet your specific needs.<br><br>
-        
-        Q: How long does it take to implement your solutions? <br>
-        A: The implementation time varies depending on the complexity of the problem and the specific solution you choose. We will provide you with a timeline estimate after we've discussed your needs and requirements.<br><br>
-        
-        Q: What kind of support do you offer after implementation? <br>
-        A: We offer ongoing support to ensure that our solutions continue to meet your needs and function properly. Our support services include bug fixes, updates, and technical assistance.<br><br>
-        
-        Q: How do I get started with your solutions? <br>
-        A: You can get started by contacting us through our website or by phone. Our team will work with you to understand your needs and develop a customized solution that meets your requirements. We can also provide a free consultation to discuss your needs in more detail.<br><br>
-        
-        Q: Can you integrate your solutions with my existing software or systems? <br>
-        A: Yes, we can integrate our solutions with your existing software and systems. We will work with you to identify any compatibility issues and ensure a smooth integration.<br><br>
-        
-        Q: What kind of security measures do you have in place to protect my data? <br>
-        A: We take security very seriously and have robust security measures in place to protect your data. Our solutions use the latest encryption technologies and our servers are located in secure data centers with 24/7 monitoring.<br>
-        
-        </p>
+    <div class="container-fluid">
+        <!-- <h4>Web App Reviews</h4> -->
     
-    
+        <div class="feedback">
+            <div class="feedback-content"> 
+                Q. What programming languages do you support? <br>
+                A: We support a wide range of programming languages including Python, Java, C++, JavaScript, Ruby, and more. If you have a specific language requirement, please contact us and we'll be happy to discuss your needs.<br><br>
+                </div>
+            <div class="feedback-user"></div>
+        </div>
+        <div class="feedback">
+            <div class="feedback-content"> 
+                Q: What kind of programming problems can your solutions help me solve? <br>
+                A: Our solutions can help you solve a variety of programming problems, including algorithmic challenges, data structure design, database management, and more. We can also provide customized solutions to meet your specific needs.<br><br>
+                </div>
+            <div class="feedback-user"></div>
+        </div>
+        <div class="feedback">
+            <div class="feedback-content"> 
+                Q: How long does it take to implement your solutions? <br>
+                A: The implementation time varies depending on the complexity of the problem and the specific solution you choose. We will provide you with a timeline estimate after we've discussed your needs and requirements.<br><br>
+               </div>
+            <div class="feedback-user"></div>
+        </div>
+
+        <div class="feedback">
+            <div class="feedback-content">
+                Q: What kind of support do you offer after implementation? <br>
+                A: We offer ongoing support to ensure that our solutions continue to meet your needs and function properly. Our support services include bug fixes, updates, and technical assistance.<br><br>
+                </div>
+            <div class="feedback-user"></div>
+        </div>
+
+        <div class="feedback">
+            <div class="feedback-content"> 
+                Q: How do I get started with your solutions? <br>
+                A: You can get started by contacting us through our website or by phone. Our team will work with you to understand your needs and develop a customized solution that meets your requirements. We can also provide a free consultation to discuss your needs in more detail.<br><br>
+                </div>
+            <div class="feedback-user"></div>
+        </div>
+
+        <div class="feedback"> 
+            Q: Can you integrate your solutions with my existing software or systems? <br>
+            A: Yes, we can integrate our solutions with your existing software and systems. We will work with you to identify any compatibility issues and ensure a smooth integration.<br><br>
+            </div>
+            <div class="feedback-user"></div>
+        </div>
+        
+            <div class="feedback"> 
+                Q: What kind of security measures do you have in place to protect my data? <br>
+                A: We take security very seriously and have robust security measures in place to protect your data. Our solutions use the latest encryption technologies and our servers are located in secure data centers with 24/7 monitoring.<br>
+            </div>
+            <div class="feedback-user"></div>
+        </div>
 </body>
 <footer class="container-fluid bg-1 text-center">
     <p>STUDY HUB-Where Learning Never Stops <br>Made By<br><u>OUAS Information Technology Students AY 2022-2023 </u></p>
