@@ -16,7 +16,7 @@ create table question (
     question_id serial primary key,
     user_id int REFERENCES users(user_id) on delete RESTRICT,
     questions varchar(255) not null,
-    created_at timestamp with time zone
+    created_at timestamp with time zone default CURRENT_TIMESTAMP not null
 );
 
 create table comments (
@@ -33,6 +33,8 @@ create table feedbacks (
     msg varchar(255) not null
     );
 
+ALTER TABLE users ADD auth_id uuid;
 
-INSERT INTO users (name, email, password)
-VALUES ('Lea Hampinen', 'lea.hampinen@gmail.com', 'OAMK12345!!!!!');
+ALTER TABLE comments
+	ADD COLUMN user_id int REFERENCES users(user_id),
+	ADD COLUMN created_at timestamp with time zone default CURRENT_TIMESTAMP not null;

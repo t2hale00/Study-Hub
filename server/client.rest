@@ -1,27 +1,48 @@
-GET http://localhost:3001
-
-###Add new
-POST http://localhost:3001/new HTTP/1.1
+###Register a user to the system
+POST http://localhost:3002/register HTTP/1.1
 Content-Type: application/json
 
 {
-    "description": "Test form REST Client"
+    "name": "testing_user",
+    "email": "test_user@gmail.com",
+    "pwdhash": "password"
 }
 
-###Delete task
-DELETE http://localhost:3001/delete/1 HTTP/1.1
-
-### Get root Login
-GET http://localhost:3000/
-
-###Get Profile
-GET http://localhost:3000/profile
-
-### Post login
-POST http://localhost:3000/login HTTP/1.1
+###Login to get auth id
+POST http://localhost:3002/login HTTP/1.1
 Content-Type: application/json
 
 {
-    "username": "john@gmail.com",
-    "password": "password"
+    "email": "joebob@gmail.com",
+    "pwdhash": "joebob"
 }
+
+###Post Question
+POST http://localhost:3002/questions?auth_id=1d3ed771-97ab-462e-8186-9a72c4bf20e6 HTTP/1.1
+Content-Type: application/json
+
+{
+    "user_id": 1,
+    "questions": "What is front end?"
+
+}
+
+###Get all Questions
+GET http://localhost:3002/questions
+Content-Type: application/json
+
+
+###Post Comment to Question
+POST http://localhost:3002/addcomment?auth_id=1d3ed771-97ab-462e-8186-9a72c4bf20e6 HTTP/1.1
+Content-Type: application/json
+
+{
+    "user_id": 1,
+    "question_id": 1,
+    "comment": "A good question"
+
+}
+
+
+###Delete User's Question
+DELETE http://localhost:3002/question/4 HTTP/1.1
