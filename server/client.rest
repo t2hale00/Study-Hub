@@ -13,16 +13,16 @@ POST http://localhost:3002/login HTTP/1.1
 Content-Type: application/json
 
 {
-    "email": "joebob@gmail.com",
-    "pwdhash": "joebob"
+    "email": "test_user@gmail.com",
+    "pwdhash": "password"
 }
 
 ###Post Question
-POST http://localhost:3002/questions?auth_id=1d3ed771-97ab-462e-8186-9a72c4bf20e6 HTTP/1.1
+POST http://localhost:3002/questions?auth_id=30b5f10f-77ff-4c58-a204-0d9820bc9b5b HTTP/1.1
 Content-Type: application/json
 
 {
-    "user_id": 1,
+    "user_id": 2,
     "questions": "What is front end?"
 
 }
@@ -33,11 +33,11 @@ Content-Type: application/json
 
 
 ###Post Comment to Question
-POST http://localhost:3002/addcomment?auth_id=1d3ed771-97ab-462e-8186-9a72c4bf20e6 HTTP/1.1
+POST http://localhost:3002/addcomment?auth_id=30b5f10f-77ff-4c58-a204-0d9820bc9b5b HTTP/1.1
 Content-Type: application/json
 
 {
-    "user_id": 1,
+    "user_id": 2,
     "question_id": 1,
     "comment": "A good question"
 

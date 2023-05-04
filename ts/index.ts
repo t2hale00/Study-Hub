@@ -1,9 +1,9 @@
-const BACKEND_ROOT_URL = 'http://localhost:3001'
+const BACKEND_ROOT_URL = 'http://localhost:3002'
 /*const BACKEND_ROOT_URL = 'https://todo-backend-njm3.onrender.com'*/
-import { Task } from "./class/Task.js"
-import { Todos } from './class/Todos.js'
+//import { Task } from "./class/Task.js"
+//import { Todos } from './class/Todos.js'
 
-const todos = new Todos(BACKEND_ROOT_URL)
+/*const todos = new Todos(BACKEND_ROOT_URL)
 
 
 const list = <HTMLUListElement>document.querySelector('#feedbacklist')
@@ -69,7 +69,7 @@ input.addEventListener('keypress',event => {
     }
 })
 
-const renderTask = (task: Task /*text*/) => {
+const renderTask = (task: Task /*text*//*) => {
     const list_item = document.createElement('li')
     list_item.setAttribute('class', 'list-group-item')
     list_item.setAttribute('data-key', task.id.toString())
@@ -125,3 +125,32 @@ input.addEventListener('keypress',event => {
         }
     }
 })
+*/
+const form = document.querySelector('form');
+
+form.addEventListener('submit', async (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(form);
+  const email = formData.get('email');
+  const password = formData.get('password');
+
+  const response = await fetch('/login', {
+    method: 'POST',
+    body: JSON.stringify({ email, password }),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  });
+
+  if (response.ok) {
+    const data = await response.json();
+    // store the authentication token and email in localStorage
+    localStorage.setItem('auth', data.auth);
+    localStorage.setItem('email', data.email);
+    // redirect to the user homepage
+    window.location.href = '/userhomepage.html';
+  } else {
+    alert('Login failed. Please check your email and password.');
+  }
+});

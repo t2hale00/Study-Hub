@@ -66,36 +66,34 @@
                         <h4 class="mt-1 mb-5 pb-1">STUDY HUB<br></h4>
                       </div>
       
-
-
-                      <form method="POST" action="http://localhost:3000/login">
+                      <form method="POST" action="http://localhost:3002/login">
                         <p>Please login to your account</p>
-      
+                      
                         <div class="form-outline mb-4">
-                          <input type="email" id="form2Example11" class="form-control"
-                            placeholder="Email address" />
+                          <input type="email" id="form2Example11" class="form-control" name="email" placeholder="Email address" />
                           <label class="form-label" for="form2Example11">Username</label>
                         </div>
-      
+                      
                         <div class="form-outline mb-4">
-                          <input type="password" id="form2Example22" class="form-control" />
+                          <input type="password" id="form2Example22" class="form-control" name="pwdhash" />
                           <label class="form-label" for="form2Example22">Password</label>
                         </div>
-      
+                      
                         <div class="text-center pt-1 mb-5 pb-1">
-                          <a class="nav-link" href="userhomepage.html"><button type="button" class="btn btn-primary" style="background-color: rgb(18, 109, 195); width: 150px; height: 60px;">
-                            <b>Log In</b></button></a>
-                            <br>
+                          <button type="submit" class="btn btn-primary" style="background-color: rgb(18, 109, 195); width: 150px; height: 60px;" id="login-btn">
+                            <b>Log In</b>
+                          </button>
+                          <br>
                           <a class="text-muted" href="#!">Forgot password?</a>
                         </div>
-      
+                      
                         <div class="d-flex align-items-center justify-content-center pb-4">
                           <p class="mb-0 me-2">Don't have an account?</p>
                           <a class="nav-link" href="signup.html"><button type="button" class="btn btn-outline-success">
-                           Create new</button></a>
+                            Create new
+                          </button></a>
                         </div>
-      
-                      </form>
+                      </form>                      
       
                     </div>
                   </div>
