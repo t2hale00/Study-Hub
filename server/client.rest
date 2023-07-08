@@ -3,9 +3,13 @@ POST http://localhost:3002/register HTTP/1.1
 Content-Type: application/json
 
 {
-    "name": "testing_user",
+    "first_name": "testing_user",
+    "last_name":  "test_12",
     "email": "test_user@gmail.com",
-    "pwdhash": "password"
+    "user_name": "test_user",
+    "password": "password",
+    "confirm_password": "password",
+    "sex": "male"
 }
 
 ###Login to get auth id
@@ -13,17 +17,16 @@ POST http://localhost:3002/login HTTP/1.1
 Content-Type: application/json
 
 {
-    "email": "joebob@gmail.com",
-    "pwdhash": "joebob"
+    "email": "test_user@gmail.com",
+    "pwdhash": "password"
 }
 
 ###Post Question
-POST http://localhost:3002/questions?auth_id=1d3ed771-97ab-462e-8186-9a72c4bf20e6 HTTP/1.1
+POST http://localhost:3002/questions?auth_id=bbacfe74-03fd-4767-bf52-e51ac02e00b8 HTTP/1.1
 Content-Type: application/json
 
 {
-    "user_id": 1,
-    "questions": "What is front end?"
+    "questions": "What is front end and backend?"
 
 }
 
@@ -33,16 +36,15 @@ Content-Type: application/json
 
 
 ###Post Comment to Question
-POST http://localhost:3002/addcomment?auth_id=1d3ed771-97ab-462e-8186-9a72c4bf20e6 HTTP/1.1
+POST http://localhost:3002/addcomment?auth_id=e829d57a-7e59-43b4-b255-8f748e1276fd HTTP/1.1
 Content-Type: application/json
 
 {
-    "user_id": 1,
-    "question_id": 1,
+    "question_id": "800ec3d6-3034-4e9e-b607-5fad1cf9aeab",
     "comment": "A good question"
 
 }
 
 
 ###Delete User's Question
-DELETE http://localhost:3002/question/4 HTTP/1.1
+DELETE http://localhost:3002/question/c4707b91-6b0a-41b8-af07-2f3c291e2559?auth_id=e829d57a-7e59-43b4-b255-8f748e1276fd HTTP/1.1
