@@ -34,6 +34,10 @@ Content-Type: application/json
 GET http://localhost:3002/questions
 Content-Type: application/json
 
+###Delete a sing user
+DELETE http://localhost:3002/deleteuser?user_name=segun_1001
+Content-Type: application/json
+
 
 ###Post Comment to Question
 POST http://localhost:3002/addcomment?auth_id=e829d57a-7e59-43b4-b255-8f748e1276fd HTTP/1.1

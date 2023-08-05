@@ -57,6 +57,16 @@ app.post('/login', (req, res) => {
         });
     });
 });
+app.delete('/deleteuser', (req, res) => {
+    const pool = openDb();
+    pool.query('delete from users where user_name = $1', [req.query.user_name], (error, result) => {
+        if (error) {
+            res.status(500).json({ error: error.message });
+            return;
+        }
+        res.status(200).json(result.rows);
+    });
+});
 app.post('/questions', (req, res) => {
     const pool = openDb();
     let user_name = "";
