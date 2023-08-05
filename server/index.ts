@@ -73,6 +73,21 @@ app.post('/login', (req:Request,res:Response) => {
     })
 })
 
+app.post('/delete_user', (req:Request,res:Response) => {
+    const pool = openDb()
+
+    pool.query('delete from user where user_name = $1',
+    [req.query.auth_id], 
+    (error: Error, result: QueryResult) => {
+        if (error) {
+            res.status(500).json({error:error.message})
+            return
+        }
+
+        res.status(200).json(result.rows) 
+    })
+})
+
 app.post('/questions', (req:Request,res:Response) => {
     const pool = openDb()
     let user_name = ""
