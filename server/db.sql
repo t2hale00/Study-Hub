@@ -33,7 +33,7 @@ create table comments (
 
 create table feedbacks (
     feedback_id serial primary key,
-    user_id int REFERENCES users(user_id) on delete RESTRICT,
+    user_id uuid REFERENCES users(user_id) on delete RESTRICT,
     msg varchar(255) not null
     );
 
@@ -42,3 +42,4 @@ ALTER TABLE users ADD auth_id uuid;
 ALTER TABLE comments
 	ADD COLUMN user_id uuid REFERENCES users(user_id),
 	ADD COLUMN created_at timestamp with time zone default CURRENT_TIMESTAMP not null;
+    
