@@ -145,9 +145,9 @@ app.delete('/question/:query_id', (req, res) => {
 const openDb = () => {
     const pool = new pg_1.Pool({
         user: 'root',
-        host: 'dpg-cikpjgp5rnuvtgr0h9a0-a.oregon-postgres.render.com',
-        database: 'studyhub',
-        password: 'i9sAdXFHMdupsQot4YaTmqQ3MvTNa2xu',
+        host: 'dpg-cl7pr4f6e7vc739vf5sg-a.oregon-postgres.render.com',
+        database: 'studyhub_jbtk',
+        password: 'TnvMD1k7RCfUBC26FUc7PgkkmzXah8Qj',
         port: 5432,
         ssl: true
     });
