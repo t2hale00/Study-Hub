@@ -115,7 +115,7 @@ app.post('/questions', (req:Request,res:Response) => {
                     result
                 }
 
-            res.status(201).json({user_id: user_id, username: user_name, question: result.rows[0].questions})  
+            res.status(201).json({user_id: user_id, username: user_name, question_id: result.rows[0].question_id, question: result.rows[0].questions})  
         })
    })
 })
