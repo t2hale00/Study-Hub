@@ -101,6 +101,16 @@ app.get('/questions', (req, res) => {
         res.status(200).json(result.rows);
     });
 });
+app.get('/questions/:query_id', (req, res) => {
+    const pool = openDb();
+    pool.query('select u.user_name, q.question_id, q.questions, q.created_at from question q join users u on q.user_id = u.user_id where q.question_id = $1', [req.params.query_id], (error, result) => {
+        if (error) {
+            res.status(500).json({ error: error.message });
+            return;
+        }
+        res.status(200).json(result.rows);
+    });
+});
 app.post('/addcomment', (req, res) => {
     const pool = openDb();
     let user_id;

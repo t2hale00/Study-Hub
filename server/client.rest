@@ -34,6 +34,10 @@ Content-Type: application/json
 GET http://localhost:3002/questions
 Content-Type: application/json
 
+###Get Single Question
+GET http://localhost:3002/questions/3d3794f5-0098-420a-b245-ee8b1c89088e
+Content-Type: application/json
+
 ###Delete a sing user
 DELETE http://localhost:3002/deleteuser?user_name=segun_1001
 Content-Type: application/json

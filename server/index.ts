@@ -133,6 +133,20 @@ app.get('/questions', (req:Request,res:Response) => {
     })
 })
 
+app.get('/questions/:query_id', (req:Request,res:Response) => {
+    const pool = openDb()
+   
+    pool.query('select u.user_name, q.question_id, q.questions, q.created_at from question q join users u on q.user_id = u.user_id where q.question_id = $1',
+    [req.params.query_id], 
+    (error: Error, result: QueryResult) => {
+        if (error) {
+            res.status(500).json({error:error.message})
+            return
+        }
+        res.status(200).json(result.rows) 
+    })
+})
+
 app.post('/addcomment', (req:Request,res:Response) => {
     const pool = openDb()
     let user_id
@@ -163,7 +177,6 @@ app.post('/addcomment', (req:Request,res:Response) => {
         })
    })
 })
-
 
 app.delete('/question/:query_id', (req:Request,res:Response) => {
     const pool = openDb()
